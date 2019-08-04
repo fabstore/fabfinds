@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: helvetica neue, arial, helvetica, freesans, liberation sans, numbus sans l, sans-serif;
+  font-weight: 300;
+  font-size: 1.12em;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 8fr) minmax(0, 1fr);
+  grid-template-rows: 20vh auto;
+  grid-template-areas:
+    " hdr    hdr    hdr "
+    " ... container ... ";
+}
+
+.hdr {
+  grid-area: hdr;
+  background-image: url("https://picsum.photos/960/220");
+  display: grid;
+  margin-bottom: 1em;
+}
+
+.logo {
+  margin: auto;
+  width: 80px;
+}
+
+.container {
+  grid-area: container;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 1em;
+}
+
+.item {
+  height: 65vh;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+  background-color: #F7F5F4;
+  border-radius: 5px
+}
+
+.img {
+border-radius: 12px;
+
+}
+
+.desc {
+align-self: center;
+border: solid blue;
+}
