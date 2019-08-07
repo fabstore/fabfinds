@@ -27,7 +27,7 @@ body {
   width: 80px;
 }
 
-.container {
+#container {
   grid-area: container;
 
   display: grid;
@@ -55,3 +55,5 @@ border-radius: 12px;
 align-self: center;
 border: solid blue;
 }
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Needle Ego</title>
+<link rel="stylesheet" type="text/css" media="screen" href="res/sq.css">
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'></script>
+<script type="text/javascript" src="https://js.squareup.com/v2/paymentform"></script>
+<script type="text/javascript" src="res/transact.js"></script>
+<meta name="viewport" content="width=device-width, initiaL-scale=1">
+<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+<meta name="description" content="Luxury Hand Bags | Purses">
+</head>
+<body>
+	<div id="form-container">
+	  <div id="sq-ccbox">
+	    <form id="nonce-form" novalidate action="process-payment" method="post">
+	      <fieldset>
+		<div id="sq-card-number"></div>
+		<div class="third">
+		  <div id="sq-expiration-date"></div>
+		</div>
+		<div class="third">
+		  <div id="sq-cvv"></div>
+		</div>
+		<div class="third">
+		  <div id="sq-postal-code"></div>
+		</div>
+	      </fieldset>
+	      <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Pay $1.00</button>
+	      <input type="hidden" id="card-nonce" name="nonce">
+	    </form>
+	  </div>
+	</div>
