@@ -1,4 +1,4 @@
-const applicationId = "REPLACE_WITH_APPLICATION_ID";
+const applicationId = "sandbox-sq0idp-hU49PzIu_4jxu-9agRAOpQ";
 
 function onGetCardNonce(event) {
   event.preventDefault();
